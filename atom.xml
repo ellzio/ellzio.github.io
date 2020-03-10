@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ellzio.github.io</id>
     <title>Ellzio&apos;s Blog</title>
-    <updated>2020-03-10T09:16:22.385Z</updated>
+    <updated>2020-03-10T09:32:18.928Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ellzio.github.io"/>
     <link rel="self" href="https://ellzio.github.io/atom.xml"/>
@@ -10,6 +10,48 @@
     <logo>https://ellzio.github.io/images/avatar.png</logo>
     <icon>https://ellzio.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Ellzio&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Question List for Python(持续更新)]]></title>
+        <id>https://ellzio.github.io/post/question-list-for-pythonchi-xu-geng-xin/</id>
+        <link href="https://ellzio.github.io/post/question-list-for-pythonchi-xu-geng-xin/">
+        </link>
+        <updated>2020-03-10T09:17:24.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="question-list-for-python持续更新">Question List for Python(持续更新)</h3>
+<ol>
+<li>
+<p>python print array时array中间是省略号没有输出全部的解决方法<br>
+在开头加入</p>
+<pre><code>import numpy as np
+np.set_printoptions(threshold=np.inf)
+</code></pre>
+</li>
+<li>
+<p>python--- JsonPath从多层嵌套Json中解析所需要的值</p>
+<pre><code>dic =   {
+        &quot;error_code&quot;: 0,
+        &quot;stu_info&quot;: [
+                {
+                        &quot;id&quot;: 2057,
+                        &quot;name&quot;: &quot;xiaohei&quot;,
+                        &quot;sex&quot;: &quot;nan&quot;,
+                        &quot;age&quot;: 29,
+                        &quot;addr&quot;: &quot;beijing&quot;,
+                        &quot;grade&quot;: &quot;tianxie&quot;,
+                        &quot;phone&quot;: &quot;18712321234&quot;,
+                        &quot;gold&quot;: 100
+                }
+        ]
+}
+import jsonpath
+s = jsonpath.jsonpath(dic,'$..name')   #不管有多少层，写两个.都能取到
+print(s) #['xiaohei'] 返回的是一个列表
+s = jsonpath.jsonpath(dic,'$..hehe')   #当不存在hehe这个key时，返回false
+print(s)  #False
+</code></pre>
+</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Jupyter nbextensions安装]]></title>
         <id>https://ellzio.github.io/post/jupyter-nbextensions-cha-jian-an-zhuang/</id>

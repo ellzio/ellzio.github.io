@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>文章归档 | Ellzio&#39;s Blog</title>
+<title>Question List for Python(持续更新) | Ellzio&#39;s Blog</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -27,7 +27,14 @@
 </script>
 
 
-    <meta name="description" content="网站描述暂时没有就不写了:)">
+    <meta name="description" content="Question List for Python(持续更新)
+
+
+python print array时array中间是省略号没有输出全部的解决方法
+在开头加入
+import numpy as np
+np.set_printoptions(..." />
+    <meta name="keywords" content="python" />
   </head>
   <body>
     <div id="app" class="main">
@@ -97,50 +104,73 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          
+          <div class="post-detail">
+            <h2 class="post-title">Question List for Python(持续更新)</h2>
+            <div class="post-date">2020-03-10</div>
+            
+              <div class="feature-container" style="background-image: url('https://ellzio.github.io/post-images/question-list-for-pythonchi-xu-geng-xin.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <h3 id="question-list-for-python持续更新">Question List for Python(持续更新)</h3>
+<ol>
+<li>
+<p>python print array时array中间是省略号没有输出全部的解决方法<br>
+在开头加入</p>
+<pre><code>import numpy as np
+np.set_printoptions(threshold=np.inf)
+</code></pre>
+</li>
+<li>
+<p>python--- JsonPath从多层嵌套Json中解析所需要的值</p>
+<pre><code>dic =   {
+        &quot;error_code&quot;: 0,
+        &quot;stu_info&quot;: [
+                {
+                        &quot;id&quot;: 2057,
+                        &quot;name&quot;: &quot;xiaohei&quot;,
+                        &quot;sex&quot;: &quot;nan&quot;,
+                        &quot;age&quot;: 29,
+                        &quot;addr&quot;: &quot;beijing&quot;,
+                        &quot;grade&quot;: &quot;tianxie&quot;,
+                        &quot;phone&quot;: &quot;18712321234&quot;,
+                        &quot;gold&quot;: 100
+                }
+        ]
+}
+import jsonpath
+s = jsonpath.jsonpath(dic,'$..name')   #不管有多少层，写两个.都能取到
+print(s) #['xiaohei'] 返回的是一个列表
+s = jsonpath.jsonpath(dic,'$..hehe')   #当不存在hehe这个key时，返回false
+print(s)  #False
+</code></pre>
+</li>
+</ol>
 
-          <h2 class="archives-title">文章归档</h2>
-          <div class="archives-container">
+            </div>
             
-              <h2 class="year" data-aos="fade-in" data-aos-delay="500">2020</h2>
-              
+              <div class="tag-container">
                 
-                  <article class="post">
-                    <a href="https://ellzio.github.io/post/question-list-for-pythonchi-xu-geng-xin/">
-                      <h2 class="post-title">
-                        Question List for Python(持续更新)
-                      </h2>
-                    </a>
-                  </article>
+                  <a href="https://ellzio.github.io/tag/b7CirLxjVN/" class="tag">
+                    python
+                  </a>
                 
-              
-                
-                  <article class="post">
-                    <a href="https://ellzio.github.io/post/jupyter-nbextensions-cha-jian-an-zhuang/">
-                      <h2 class="post-title">
-                        Jupyter nbextensions安装
-                      </h2>
-                    </a>
-                  </article>
-                
-              
-                
-                  <article class="post">
-                    <a href="https://ellzio.github.io/post/tensorflow-tu-xiang-fen-lei-qi-retrain-guo-cheng/">
-                      <h2 class="post-title">
-                        Tensorflow图像分类器retrain过程
-                      </h2>
-                    </a>
-                  </article>
-                
-              
+              </div>
             
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://ellzio.github.io/post/jupyter-nbextensions-cha-jian-an-zhuang/">
+                  <h3 class="post-title">
+                    Jupyter nbextensions安装
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
           </div>
-
-          <div class="pagination-container">
-  
-  
-</div>
 
         </div>
       </div>
