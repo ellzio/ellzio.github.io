@@ -1,32 +1,20 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
-
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jupyter nbextensions安装 | Ellzio&#39;s Blog</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://ellzio.github.io/favicon.ico?v=1583939533792">
+<meta name="description" content="随便写写 :-)" />
+<link rel="shortcut icon" href="https://ellzio.github.io/favicon.ico">
 <link rel="stylesheet" href="https://ellzio.github.io/styles/main.css">
 
-
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160210557-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-160210557-1');
-</script>
-
-
+<script src="https://ellzio.github.io/media/js/jquery.min.js"></script>
+<script src="https://ellzio.github.io/media/js/masonry.pkgd.min.js"></script>
+<script src="https://ellzio.github.io/media/js/aos.js"></script>
+<script src="https://ellzio.github.io/media/js/pace.min.js"></script>
+<script src="https://ellzio.github.io/media/js/view-image.min.js"></script>
+<script src="https://ellzio.github.io/media/js/jquery.magnific-popup.min.js"></script>
+<script src="https://ellzio.github.io/media/js/functions.js"></script>
+    <meta name="referrer" content="never">
     <meta name="description" content="Conda
 conda install -c conda-forge jupyter_contrib_nbextensions
 
@@ -35,84 +23,108 @@ pip install jupyter_contrib_nbextensions
 
 根据自己的习惯勾选..." />
     <meta name="keywords" content="Jupyter,python" />
+    <script src="https://ellzio.github.io/media/js/waterfall.min.js"></script>
+    <script src="https://ellzio.github.io/media/js/prism.min.js"></script>
   </head>
   <body>
-    <div id="app" class="main">
+            <header id="header" class="grid-container">
+        <!-- start: .menu-wrapper -->
+        <div class="menu-mobile"> 
+          <i class="fa fa-reorder"></i>
+        </div>
+        <div class="menu-wrapper">
+          <div class="">
+            <div class="logo">
+              <a href="https://ellzio.github.io"><img src="\media\images\custom-headerLogo.png" alt=""></a>
+            </div>
+            <!-- start: .main-nav -->
 
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://ellzio.github.io">
-        <img src="https://ellzio.github.io/images/avatar.png?v=1583939533792" class="site-logo">
-        <h1 class="site-title">Ellzio&#39;s Blog</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
+            <nav class="main-nav grid-container grid-parent">
+              <ul id="menu-header" class="menu gradient-effect">
+                <li class=""><a href="https://ellzio.github.io" class="menu">首页</a></li>
+                
+                  <li class="" >
+                    <a href="/" class="menu">
+                      首页
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/archives" class="menu">
+                      归档
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/tags" class="menu">
+                      标签
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/post/about" class="menu">
+                      关于
+                    </a>
+                  </li>
+                
+                <li class="search-menu-item hide-on-mobile hide-on-tablet"><a href="#search-lightbox" class="lightbox mfp-inline"><i class="fa fa-search-line"></i></a></li>
+              </ul>
+            </nav>
+            <a href="#search-lightbox" class="lightbox epcl-search-button mfp-inline hide-on-tablet hide-on-desktop"><i class="fa fa-search-line"></i></a>
+            <!-- end: .main-nav -->
+            <div class="clear"></div>
+            <div class="border hide-on-tablet hide-on-mobile"></div>
+          </div>    
+          <div class="clear"></div>
+        </div>
+        <!-- end: .menu-wrapper -->
+        <div class="clear"></div>
+      </header>
+      <div class="hide-on-mobile hide-on-tablet hide-on-desktop">
+        <div id="search-lightbox" class="grid-container grid-small grid-parent mfp-hide">
+          <div class="search-wrapper section">
+            <form id="gridea-search-form" data-update="1583941505383" action="/search/index.html" class="search-form" _lpchecked="1">
+              <input type="text" name="q" id="s" value="" class="search-field" placeholder="搜点啥..." aria-label="搜点啥..." required="">
+              <button type="submit" class="submit" aria-label="Submit">
+                <i class="fa fa-search-line"></i>
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
-    </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      随便写写 :-)
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://ellzio.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
 
+      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">Jupyter nbextensions安装</h2>
-            <div class="post-date">2020-03-10</div>
-            
-              <div class="feature-container" style="background-image: url('https://ellzio.github.io/post-images/jupyter-nbextensions-cha-jian-an-zhuang.jpg')">
+        <div class="center content">
+          <div class="featured-image cover" style="background-image: url('https://ellzio.github.io/post-images/jupyter-nbextensions-cha-jian-an-zhuang.jpg');">
+            <div class="meta top"> 
+              <time class="meta-info" style="float:left;" datetime="2020-03-10"><i class="fa fa-calendar"></i><span class="lately">1 天前</span></time>
+              
+              <a href="https://ellzio.github.io/post/jupyter-nbextensions-cha-jian-an-zhuang/#comments" class="comments meta-info" title="">
+                <i class="fa fa-comment remixicon"></i><span class="comment-count valine-comment-count" data-xid="/jupyter-nbextensions-cha-jian-an-zhuang/"> </span>
+              </a>
+              <span id="/jupyter-nbextensions-cha-jian-an-zhuang/" class="leancloud_visitors views-counter meta-info" title=""><i class="fa fa-leancloud remixicon"></i><span class="leancloud-visitors-count"></span></span>
+              
+            </div>
+            <div class="info">
+              <div class="tags ">
+                
+                      <a href="https://ellzio.github.io/tag/PqoBYjRdB/" class="ctag ctag-0 ctag-PqoBYjRdB" aria-label="">Jupyter</a>
+                    
+                      <a href="https://ellzio.github.io/tag/b7CirLxjVN/" class="ctag ctag-1 ctag-b7CirLxjVN" aria-label="">python</a>
+                    
               </div>
-            
-            <div class="post-content" v-pre>
-              <p><strong>Conda</strong></p>
+              <h1 class="title ularge white bold">Jupyter nbextensions安装</h1>
+            </div>
+          </div>
+        </div>  
+
+        <div class="epcl-page-wrapper">
+          <div class="left-content grid-70 np-mobile">
+            <article class="main-article post">
+              <section class="post-content">
+                <div class="text">
+                  <p><strong>Conda</strong></p>
 <pre><code>conda install -c conda-forge jupyter_contrib_nbextensions
 </code></pre>
 <p><strong>PIP</strong></p>
@@ -121,62 +133,187 @@ pip install jupyter_contrib_nbextensions
 <p>根据自己的习惯勾选<br>
 <img src="https://ellzio.github.io/post-images/1583833087847.png" alt="" loading="lazy"></p>
 
+                </div>
+                <div class="clear"></div>
+              </section>
+            </article>
+            <div class="clear"></div>
+
+            <section class="related section">
+              
+              <article class="prev grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://ellzio.github.io/post-images/question-list-for-pythonchi-xu-geng-xin.jpg');"></div>
+                 <a href="https://ellzio.github.io/post/question-list-for-pythonchi-xu-geng-xin/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2020-03-10">2020-03-10</time>
+                  <h4 class="title white no-margin">Question List for Python(持续更新)</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://ellzio.github.io/media/images/left-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+              
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://ellzio.github.io/post-images/tensorflow-tu-xiang-fen-lei-qi-retrain-guo-cheng.jpg');"></div>
+                 <a href="https://ellzio.github.io/post/tensorflow-tu-xiang-fen-lei-qi-retrain-guo-cheng/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2020-03-10">2020-03-10</time>
+                  <h4 class="title white no-margin">Tensorflow图像分类器retrain过程</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://ellzio.github.io/media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
+              
+
+                <div class="clear"></div>
+            </section>
+
+              <div class="clear"></div>
+              
+            
+              <div id="comments" class="bg-white hosted ">
+                <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
+              </div>
+              <div class="clear"></div>
+            
+
             </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://ellzio.github.io/tag/PqoBYjRdB/" class="tag">
-                    Jupyter
-                  </a>
-                
-                  <a href="https://ellzio.github.io/tag/b7CirLxjVN/" class="tag">
-                    python
-                  </a>
-                
-              </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://ellzio.github.io/post/tensorflow-tu-xiang-fen-lei-qi-retrain-guo-cheng/">
-                  <h3 class="post-title">
-                    Tensorflow图像分类器retrain过程
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-
           </div>
+      </main>
 
+          <footer id="footer" class="grid-container">
+        <div class="widgets row gradient-effect">
+            <div class="default-sidebar border-effect">
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="tag_cloud-2" class="widget widget_epcl_posts_thumbs underline-effect">
+                  <h4 class="widget-title title white bordered">最新文章</h4>
+                  
+                  
+                  <article class="item post-0 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://ellzio.github.io/post/question-list-for-pythonchi-xu-geng-xin/" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://ellzio.github.io/post-images/question-list-for-pythonchi-xu-geng-xin.jpg');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2020-03-10">2020-03-10</time>
+                      <h4 class="title usmall">
+                        <a href="https://ellzio.github.io/post/question-list-for-pythonchi-xu-geng-xin/">Question List for Python(持续更新)</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  <article class="item post-1 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://ellzio.github.io/post/jupyter-nbextensions-cha-jian-an-zhuang/" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://ellzio.github.io/post-images/jupyter-nbextensions-cha-jian-an-zhuang.jpg');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2020-03-10">2020-03-10</time>
+                      <h4 class="title usmall">
+                        <a href="https://ellzio.github.io/post/jupyter-nbextensions-cha-jian-an-zhuang/">Jupyter nbextensions安装</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  <article class="item post-2 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://ellzio.github.io/post/tensorflow-tu-xiang-fen-lei-qi-retrain-guo-cheng/" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('https://ellzio.github.io/post-images/tensorflow-tu-xiang-fen-lei-qi-retrain-guo-cheng.jpg');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2020-03-10">2020-03-10</time>
+                      <h4 class="title usmall">
+                        <a href="https://ellzio.github.io/post/tensorflow-tu-xiang-fen-lei-qi-retrain-guo-cheng/">Tensorflow图像分类器retrain过程</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  
+                  <div class="clear"></div>
+                </section>
+              </div>
+
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="tag_cloud-2" class="widget widget_tag_cloud underline-effect">
+                  <h4 class="widget-title title white bordered">标签云</h4>
+                  <div class="tagcloud">
+                    
+                      <a href="https://ellzio.github.io/tag/b7CirLxjVN/" class="ctag ctag-0 ctag-b7CirLxjVN" aria-label="">python</a>
+                    
+                      <a href="https://ellzio.github.io/tag/PqoBYjRdB/" class="ctag ctag-1 ctag-PqoBYjRdB" aria-label="">Jupyter</a>
+                    
+                      <a href="https://ellzio.github.io/tag/Xd2w72H7P/" class="ctag ctag-2 ctag-Xd2w72H7P" aria-label="">CV</a>
+                    
+                      <a href="https://ellzio.github.io/tag/yKbr1ulJ3R/" class="ctag ctag-3 ctag-yKbr1ulJ3R" aria-label="">Tensorflow</a>
+                    
+                  </div>
+                  <div class="clear"></div>
+                </section>
+              </div>
+
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="epcl_about-2" class="widget widget_epcl_about underline-effect">
+                  <h4 class="widget-title title white bordered">关于我</h4>
+                  <div class="avatar">
+                    <a href="" class="translate-effect thumb"><span class="fullimage cover" style="background-image: url(https://ellzio.github.io/images/avatar.png);"></span></a>
+                  </div>
+                  <div class="info">
+                    <h4 class="title small author-name gradient-effect no-margin"><a href="">Ellzio&#39;s Blog</a></h4>
+                    <p class="founder">随便写写 :-)</p>
+                    <div class="social">
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                    </div> 
+                  </div>
+                  <div class="clear"></div>
+                  </section>
+              </div>
+
+            </div>
+            <div class="clear"></div>
         </div>
-      </div>
+
+        <div class="logo">
+          <a href="https://ellzio.github.io"><img src="\media\images\custom-footerLogo.png" alt=""></a>
+        </div>
+        <p class="published border-effect">
+          ©2019 共 4 篇文章
+          <br/>
+          Theme <a href="https://gridea.dev/" target="_blank">「breek」</a> Powered by <a href="https://gridea.dev/" target="_blank">「Gridea」</a>
+        </p>
+        
+        <a href="javascript:void(0)" id="back-to-top" class="epcl-button dark" style="display:none">
+          <i class="fa fa-arrow"></i>
+        </a>
+    </footer>
+    
+    <div class="clear"></div>
+
+        
+
+      
+    <script src="https://ellzio.github.io/media/js/functions-post.js"></script>
+
     </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
-</script>
-
-
-  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad()
-  </script>
-
-
-
-
-
+    <!-- end: #wrapper -->
   </body>
 </html>
