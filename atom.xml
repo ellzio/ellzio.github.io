@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ellzio.github.io</id>
     <title>Ellzio&apos;s Blog</title>
-    <updated>2020-03-24T10:05:26.130Z</updated>
+    <updated>2020-03-24T10:09:03.723Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ellzio.github.io"/>
     <link rel="self" href="https://ellzio.github.io/atom.xml"/>
@@ -133,7 +133,11 @@ print(s)  #False
         <link href="https://ellzio.github.io/post/tensorflow-tu-xiang-fen-lei-qi-retrain-guo-cheng/">
         </link>
         <updated>2020-03-10T08:07:53.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="0x00-运行环境">0x00 运行环境</h2>
+        <summary type="html"><![CDATA[<p>训练Tensorflow图像分类器分类五种鲜花</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>训练Tensorflow图像分类器分类五种鲜花</p>
+<!-- more -->
+<h2 id="0x00-运行环境">0x00 运行环境</h2>
 <p>首先安装anaconda和tensorflow_gpu环境, 网上有教程，不多赘述。装完之后好像tensorflow_gpu会在anaconda下创建一个虚拟环境。</p>
 <p>然后将Tensorflow图像分类器项目克隆到本地，项目地址(<a href="https://github.com/akshaypai/tfClassifier">https://github.com/akshaypai/tfClassifier</a>)<br>
 具体步骤，打开命令提示符，输入命令<br>
