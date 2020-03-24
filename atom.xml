@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ellzio.github.io</id>
     <title>Ellzio&apos;s Blog</title>
-    <updated>2020-03-15T06:54:34.832Z</updated>
+    <updated>2020-03-24T10:05:26.130Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ellzio.github.io"/>
     <link rel="self" href="https://ellzio.github.io/atom.xml"/>
@@ -10,6 +10,51 @@
     <logo>https://ellzio.github.io/images/avatar.png</logo>
     <icon>https://ellzio.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Ellzio&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[语义分割图像标注工具]]></title>
+        <id>https://ellzio.github.io/post/yu-yi-fen-ge-tu-xiang-biao-zhu-gong-ju/</id>
+        <link href="https://ellzio.github.io/post/yu-yi-fen-ge-tu-xiang-biao-zhu-gong-ju/">
+        </link>
+        <updated>2020-03-24T09:39:55.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>
+<p><strong>Computer Vision Annotation Tool (CVAT)</strong><br>
+<img src="https://ellzio.github.io/post-images/1585044116735.jpg" alt="" loading="lazy"><br>
+URL: <a href="https://github.com/opencv/cvat">https://github.com/opencv/cvat</a><br>
+在线演示: <a href="https://c.onepanel.io/onepanel-demo/projects/cvat-public-demo/workspaces">https://c.onepanel.io/onepanel-demo/projects/cvat-public-demo/workspaces</a></p>
+</li>
+<li>
+<p><strong>PixelAnnotationTool</strong><br>
+<img src="https://ellzio.github.io/post-images/1585044130176.jpg" alt="" loading="lazy"><br>
+URL: <a href="https://github.com/abreheret/PixelAnnotationTool">https://github.com/abreheret/PixelAnnotationTool</a></p>
+</li>
+<li>
+<p><strong>Curve-GCN</strong><br>
+<img src="https://ellzio.github.io/post-images/1585044137787.jpg" alt="" loading="lazy"><br>
+URL: <a href="https://github.com/fidler-lab/curve-gcn">https://github.com/fidler-lab/curve-gcn</a></p>
+</li>
+<li>
+<p><strong>Labelme</strong><br>
+<img src="https://ellzio.github.io/post-images/1585044147400.jpg" alt="" loading="lazy"><br>
+URL: <a href="https://github.com/wkentaro/labelme">https://github.com/wkentaro/labelme</a></p>
+</li>
+<li>
+<p><strong>LabelImg</strong><br>
+<img src="https://ellzio.github.io/post-images/1585044156215.jpg" alt="" loading="lazy"><br>
+URL: <a href="https://github.com/tzutalin/labelImg">https://github.com/tzutalin/labelImg</a></p>
+</li>
+<li>
+<p><strong>Semantic Segmentation Editor</strong><br>
+<img src="https://ellzio.github.io/post-images/1585043366762.png" alt="" loading="lazy"><br>
+URL: <a href="https://github.com/Hitachi-Automotive-And-Industry-Lab/semantic-segmentation-editor">https://github.com/Hitachi-Automotive-And-Industry-Lab/semantic-segmentation-editor</a></p>
+</li>
+</ol>
+<p><strong>参考</strong></p>
+<p>[1] <a href="https://www.zhihu.com/question/30626971/answer/785480415">https://www.zhihu.com/question/30626971/answer/785480415</a><br>
+[2] <a href="https://blog.csdn.net/chaipp0607/article/details/79036312">https://blog.csdn.net/chaipp0607/article/details/79036312</a><br>
+[3] <a href="https://www.infoq.cn/article/OOFtcgKNej1TJvW6u7FR">https://www.infoq.cn/article/OOFtcgKNej1TJvW6u7FR</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Question List for Python(持续更新)]]></title>
         <id>https://ellzio.github.io/post/question-list-for-pythonchi-xu-geng-xin/</id>
@@ -52,6 +97,16 @@ s = jsonpath.jsonpath(dic,'$..hehe')   #当不存在hehe这个key时，返回fal
 print(s)  #False
 </code></pre>
 <p>From: <a href="https://www.cnblogs.com/HathawayLee/p/10024560.html">https://www.cnblogs.com/HathawayLee/p/10024560.html</a></p>
+</li>
+<li>
+<p>错误ValueError: Object arrays cannot be loaded when allow_pickle=False<br>
+解决方法：将numpy回到旧版本1.16.1或1.16.2版本即可</p>
+<pre><code>conda install numpy=1.16.2
+</code></pre>
+<p>or</p>
+<pre><code>pip install numpy=1.16.2
+</code></pre>
+<p>From: <a href="https://blog.csdn.net/weixin_42096901/article/details/89855804">https://blog.csdn.net/weixin_42096901/article/details/89855804</a></p>
 </li>
 </ol>
 ]]></content>

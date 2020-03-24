@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://ellzio.github.io/favicon.ico?v=1584255272859">
+<link rel="shortcut icon" href="https://ellzio.github.io/favicon.ico?v=1585044268090">
 <link rel="stylesheet" href="https://ellzio.github.io/styles/main.css">
 
 
@@ -44,7 +44,7 @@ np.set_printoptions(threshold=..." />
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://ellzio.github.io">
-        <img src="https://ellzio.github.io/images/avatar.png?v=1584255272859" class="site-logo">
+        <img src="https://ellzio.github.io/images/avatar.png?v=1585044268090" class="site-logo">
         <h1 class="site-title">Ellzio&#39;s Blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -147,6 +147,16 @@ s = jsonpath.jsonpath(dic,'$..hehe')   #当不存在hehe这个key时，返回fal
 print(s)  #False
 </code></pre>
 <p>From: <a href="https://www.cnblogs.com/HathawayLee/p/10024560.html">https://www.cnblogs.com/HathawayLee/p/10024560.html</a></p>
+</li>
+<li>
+<p>错误ValueError: Object arrays cannot be loaded when allow_pickle=False<br>
+解决方法：将numpy回到旧版本1.16.1或1.16.2版本即可</p>
+<pre><code>conda install numpy=1.16.2
+</code></pre>
+<p>or</p>
+<pre><code>pip install numpy=1.16.2
+</code></pre>
+<p>From: <a href="https://blog.csdn.net/weixin_42096901/article/details/89855804">https://blog.csdn.net/weixin_42096901/article/details/89855804</a></p>
 </li>
 </ol>
 
